@@ -1,7 +1,12 @@
 body {
   background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
-  height: 100vh;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
 }
 
