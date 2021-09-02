@@ -5,7 +5,8 @@ body {
   
   padding: 5px;
   margin: 1px;
-  padding-right: 5px;
+  padding-right: 100px;
+  padding-left: 100px;
 
   display: flex;
   justify-content: center;
