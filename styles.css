@@ -1,45 +1,44 @@
 body {
-   <!-- background: linear-gradient(to top right, #3a3b3b 0%, #3a3939 100%); -->
-  background-image: url('laptop.jpg');
-  background-size: cover;
+  background-image: url("images/laptop.jpg");
+  background-size: 100%;
+  width: 100vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-  padding: 5px;
-  margin: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #252835;
+  background-color: rgba(
+    rgb(59, 53, 53),
+    rgb(55, 74, 97),
+    rgb(75, 75, 116),
+    0.5
+  );
 }
 
-div {
-  height: 95vh;
-  width: 70vw;
+.container {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
-
+  background-color: rgba(rgb(59, 53, 53), rgb(55, 74, 97), rgb(75, 75, 116), 1);
 }
 
 h1 {
-  color: rgb(2, 207, 139);
-  background-color: #706f6f;
-  margin: 5px;
+  color: rgb(119, 165, 252);
+  background-color: #000000;
+  margin: 0px;
   padding-right: 100px;
-  padding-left: 100px;
-  text-shadow: 2px 2px #FF0000;
-  
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px #c05959;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-*
-{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h2 {
   text-align: left;
@@ -49,7 +48,7 @@ h2 {
   -webkit-text-stroke: 0.1vw #383d52;
   text-transform: uppercase;
 }
-h2::before{
+h2::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -63,14 +62,14 @@ h2::before{
   animation: animate 12s linear infinite;
 }
 
-@keyframes animate
-{
-  0%,10%,100%
-  {
+@keyframes animate {
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%,90%
-  {
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -79,19 +78,20 @@ p {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin: 5px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
+  background: rgba(rgb(59, 53, 53), rgb(55, 74, 97), rgb(75, 75, 116), 0.5);
 }
 
-nav{
+nav {
   float: right;
 }
-nav ul{
+nav ul {
   margin: 0;
-  padding: 0;
+  padding-right: 10px;
   list-style: none;
 }
-nav li{
+nav li {
   display: inline-block;
   margin-left: 50px;
   padding-top: 10px;
@@ -99,22 +99,22 @@ nav li{
   text-align: center;
   position: relative;
 }
-nav ul li a{
+nav ul li a {
   text-align: center;
 }
 
-nav a{
+nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
 nav a:hover {
-  color:#000;
+  color: rgb(0, 162, 255);
 }
 
 nav a::before {
-  content: '';
+  content: "";
   display: block;
   height: 5px;
   background-color: rgb(2, 207, 139);
@@ -126,7 +126,6 @@ nav a::before {
   transition: all ease-in-out 400ms;
 }
 
-nav a:hover::before{
+nav a:hover::before {
   width: 100%;
 }
-
